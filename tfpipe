@@ -9,7 +9,7 @@
   // Run terraform init
   stage('Provision') {
     node {
-          sh 'terraform init'
+          sh '/usr/local/bin/terraform init'
           sh 'terraform plan -out=plan'
 	  //sh 'terraform apply plan'
         }
