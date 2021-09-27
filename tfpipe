@@ -10,7 +10,7 @@
   stage('Provision') {
     node {
           sh '/usr/local/bin/terraform init'
-          sh 'terraform plan -out=plan'
+          sh '/usr/local/bin/terraform plan -out=plan'
 	  //sh 'terraform apply plan'
         }
       }
